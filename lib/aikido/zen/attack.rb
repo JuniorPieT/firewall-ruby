@@ -134,5 +134,37 @@ module Aikido::Zen
         }
       end
     end
+    
+    class PathTraversalAttack < Attack
+      attr_reader :path
+      attr_reader :input
+    
+      def initialize(path:, input:, **opts)
+        super(**opts)
+        @path = path
+        @input = input
+      end
+    
+      def log_message
+        format(
+          "Path Traversal: User input «%s» detected in sensitive path «%s».",
+          @input, @path
+        )
+      end
+    
+      def exception(*)
+        PathTraversalDetectedError.new(self)
+      end
+    
+      def as_json
+        {
+          kind: "path_traversal",
+          blocked: blocked?,
+          metadata: { path: @path },
+          operation: @operation
+        }.merge(@input.as_json)
+      end
+    end
+    
   end
 end

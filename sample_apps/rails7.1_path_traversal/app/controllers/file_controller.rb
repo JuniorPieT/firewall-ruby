@@ -6,6 +6,10 @@ class FileController < ApplicationController
     filename = params[:filename]
 
     if filename.present?
+      if (context = Aikido::Zen.current_context)
+        context["path_traversal.input"] = filename
+      end
+
       file_path = File.join(File.dirname(__FILE__), filename)
 
       # Check if the file exists before trying to read it
