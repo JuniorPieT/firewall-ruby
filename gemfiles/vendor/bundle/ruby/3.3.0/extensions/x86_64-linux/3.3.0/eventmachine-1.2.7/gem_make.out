@@ -1,0 +1,19 @@
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+/home/pierre/.rbenv/versions/3.3.7/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-38glvc sitelibdir\=./.gem.20250404-119071-38glvc clean
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-38glvc sitelibdir\=./.gem.20250404-119071-38glvc
+compiling mapper.cpp
+compiling rubymain.cpp
+linking shared-object fastfilereaderext.so
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-38glvc sitelibdir\=./.gem.20250404-119071-38glvc install
+/usr/bin/install -c -m 0755 fastfilereaderext.so ./.gem.20250404-119071-38glvc
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/eventmachine-1.2.7/ext/fastfilereader
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-38glvc sitelibdir\=./.gem.20250404-119071-38glvc clean

@@ -1,0 +1,35 @@
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/io-event-1.7.3/ext
+/home/pierre/.rbenv/versions/3.3.7/bin/ruby extconf.rb
+checking for rb_ext_ractor_safe()... yes
+checking for &rb_fiber_transfer()... yes
+checking for -luring... no
+checking for sys/epoll.h... yes
+checking for sys/event.h... no
+checking for sys/wait.h... yes
+checking for sys/eventfd.h... yes
+checking for rb_io_descriptor()... yes
+checking for &rb_process_status_wait()... yes
+checking for rb_fiber_current()... yes
+checking for &rb_fiber_raise()... yes
+checking for epoll_pwait2()... yes
+checking for ruby/io/buffer.h... yes
+creating extconf.h
+creating Makefile
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/io-event-1.7.3/ext
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-yj5wew sitelibdir\=./.gem.20250404-119071-yj5wew clean
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/io-event-1.7.3/ext
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-yj5wew sitelibdir\=./.gem.20250404-119071-yj5wew
+compiling ./io/event/event.c
+compiling ./io/event/selector/selector.c
+compiling ./io/event/selector/epoll.c
+compiling ./io/event/interrupt.c
+linking shared-object IO_Event.so
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/io-event-1.7.3/ext
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-yj5wew sitelibdir\=./.gem.20250404-119071-yj5wew install
+/usr/bin/install -c -m 0755 IO_Event.so ./.gem.20250404-119071-yj5wew
+
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/io-event-1.7.3/ext
+make DESTDIR\= sitearchdir\=./.gem.20250404-119071-yj5wew sitelibdir\=./.gem.20250404-119071-yj5wew clean
