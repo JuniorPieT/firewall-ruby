@@ -1,0 +1,21 @@
+/.bundle/
+/.yardoc
+/_yardoc/
+/coverage/
+/doc/
+/pkg/
+/spec/reports/
+/tmp/
+/Gemfile*
+/sample_apps/*/Gemfile*
+
+# Precompiled libzen_internals
+/lib/aikido/zen/libzen*
+
+# Editor files :
+.idea/
+*.iml
+.vscode/
+*.atom
+*.sublime-workspace
+*.sublime-project

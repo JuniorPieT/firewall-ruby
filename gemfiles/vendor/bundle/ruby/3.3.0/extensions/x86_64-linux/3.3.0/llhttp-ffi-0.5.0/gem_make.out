@@ -1,0 +1,8 @@
+current directory: /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/llhttp-ffi-0.5.0/ext
+/home/pierre/.rbenv/versions/3.3.7/bin/ruby -rrubygems /home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/gems/rake-13.2.1/exe/rake RUBYARCHDIR\=/home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux/3.3.0/llhttp-ffi-0.5.0 RUBYLIBDIR\=/home/pierre/projects/firewall-ruby-main/gemfiles/vendor/bundle/ruby/3.3.0/extensions/x86_64-linux/3.3.0/llhttp-ffi-0.5.0
+gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -fPIC -o x86_64-linux/llhttp/llhttp_ext.o -c ./llhttp/llhttp_ext.c
+mkdir -p x86_64-linux/llhttp
+gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -fPIC -o x86_64-linux/llhttp/llhttp.o -c ./llhttp/llhttp.c
+gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -fPIC -o x86_64-linux/llhttp/http.o -c ./llhttp/http.c
+gcc -fexceptions -O -fno-omit-frame-pointer -fno-strict-aliasing -fPIC -o x86_64-linux/llhttp/api.o -c ./llhttp/api.c
+gcc -shared -o x86_64-linux/libllhttp-ext.so x86_64-linux/llhttp/api.o x86_64-linux/llhttp/http.o x86_64-linux/llhttp/llhttp.o x86_64-linux/llhttp/llhttp_ext.o -fexceptions 

@@ -1,0 +1,19 @@
+current directory: /mnt/c/Users/Pierre/Desktop/firewall-ruby-main/sample_apps/rails7.1_path_traversal/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+/home/pierre/.rbenv/versions/3.3.4/bin/ruby extconf.rb
+creating Makefile
+
+current directory: /mnt/c/Users/Pierre/Desktop/firewall-ruby-main/sample_apps/rails7.1_path_traversal/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250404-117783-6ywe7s sitelibdir\=./.gem.20250404-117783-6ywe7s clean
+
+current directory: /mnt/c/Users/Pierre/Desktop/firewall-ruby-main/sample_apps/rails7.1_path_traversal/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250404-117783-6ywe7s sitelibdir\=./.gem.20250404-117783-6ywe7s
+compiling debug.c
+compiling iseq_collector.c
+linking shared-object debug/debug.so
+
+current directory: /mnt/c/Users/Pierre/Desktop/firewall-ruby-main/sample_apps/rails7.1_path_traversal/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250404-117783-6ywe7s sitelibdir\=./.gem.20250404-117783-6ywe7s install
+/usr/bin/install -c -m 0755 debug.so ./.gem.20250404-117783-6ywe7s/debug
+
+current directory: /mnt/c/Users/Pierre/Desktop/firewall-ruby-main/sample_apps/rails7.1_path_traversal/vendor/bundle/ruby/3.3.0/gems/debug-1.10.0/ext/debug
+make DESTDIR\= sitearchdir\=./.gem.20250404-117783-6ywe7s sitelibdir\=./.gem.20250404-117783-6ywe7s clean

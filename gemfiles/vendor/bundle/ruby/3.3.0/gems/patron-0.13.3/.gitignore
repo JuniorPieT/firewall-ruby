@@ -1,0 +1,10 @@
+.rbenv*
+.rvmrc
+*.bundle
+coverage
+rdoc
+doc
+pkg
+tmp
+.yardoc
+Gemfile.lock

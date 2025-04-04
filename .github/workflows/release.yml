@@ -1,0 +1,28 @@
+name: Publish new Release
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  build:
+    uses: "./.github/workflows/main.yml"
+  release:
+    runs-on: ubuntu-latest
+    name: release-gem
+
+    permissions:
+      contents: write
+      id-token: write
+
+    needs:
+      - build
+    steps:
+      - uses: actions/checkout@v4
+      - name: Configure the latest Gemfile
+        run: bin/link_gemfile "$(cat .ruby-version)"
+      - name: Set up Ruby
+        uses: ruby/setup-ruby@v1
+        with:
+          bundler-cache: true
+      - uses: rubygems/release-gem@v1
