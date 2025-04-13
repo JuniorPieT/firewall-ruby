@@ -28,6 +28,8 @@ module Aikido::Zen
           "/tmp/",
           "/usr/",
           "/var/",
+          "c:/",
+          "c:\\"
         ].freeze
 
         def self.call(sink:, context:, path:, operation:, **_kwargs)
@@ -52,12 +54,6 @@ module Aikido::Zen
         def self.vulnerable_path?(file_path, user_input, check_path_start: true, is_url: false)
           # Ignore single characters
           return false if user_input.length <= 1
-
-          # Check URL path traversal
-          if is_url && contains_unsafe_path_parts?(user_input)
-            file_path_from_url = parse_as_file_url(user_input)
-            return true if file_path_from_url && file_path.include?(file_path_from_url)
-          end
 
           # Ignore if user_input is longer than file_path
           return false if user_input.length > file_path.length
