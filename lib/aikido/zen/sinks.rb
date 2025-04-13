@@ -11,6 +11,7 @@ require_relative "sinks/http" if defined?(::HTTP)
 require_relative "sinks/httpx" if defined?(::HTTPX)
 require_relative "sinks/httpclient" if defined?(::HTTPClient)
 require_relative "sinks/excon" if defined?(::Excon)
+require_relative "sinks/file"
 require_relative "sinks/curb" if defined?(::Curl)
 require_relative "sinks/patron" if defined?(::Patron)
 require_relative "sinks/typhoeus" if defined?(::Typhoeus)
